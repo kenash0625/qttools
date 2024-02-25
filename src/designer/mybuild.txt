@@ -1,0 +1,86 @@
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+git config --global --unset http.proxy
+git config --global --get http.proxy
+
+#
+cd D:\prog\qt\5.15.2\msvc2019_64\qtbase\src\tools\uic
+D:\prog\qt\Tools\QtCreator\bin\jom\jom.exe -f Makefile.Debug
+cd D:\prog\qt-creator-opensource-src-4.13.0\build
+cmake --build .
+cd D:\prog\qt\5.15.2\msvc2019_64\qttools\src\designer\src\designer
+D:\prog\qt\Tools\QtCreator\bin\jom\jom.exe -f Makefile.Debug 
+
+D:\prog\qt\5.15.2\msvc2019_64\qtbase\bin\uic.exe d:\untitled.ui
+
+#build qtcreator 4.13
+set PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin
+d:
+cd D:\prog\qt-creator-opensource-src-4.13.0
+mkdir build
+cd build
+cmake -S .. -B . -G Ninja -D CMAKE_INSTALL_PREFIX=.\install -D CMAKE_BUILD_TYPE=Debug
+cmake --build .
+
+PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;D:\prog\qskinny-master\build\install\lib\qskinny;D:\prog\qskinny-master\build\install\lib\qskinny\plugins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\skins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\platforminputcontexts;D:\prog\qskinny-master\build\support\Debug;D:\prog\qt-creator-opensource-src-4.13.0\build\lib\qtcreator\plugins;D:\prog\qt-creator-opensource-src-4.13.0\build\bin;D:\prog\qt\5.15.2\msvc2019_64\qttools\plugins\designer
+D:\prog\qt-creator-opensource-src-4.13.0\build\bin\qtcreator.exe
+
+
+#build qtcreator 4.13orig
+set PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin
+d:
+cd D:\prog\qt-creator-opensource-src-4.13.0orig
+mkdir build
+cd build
+cmake -S .. -B . -G Ninja -D CMAKE_INSTALL_PREFIX=.\install -D CMAKE_BUILD_TYPE=Debug
+cmake --build .
+PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;D:\prog\qskinny-master\build\install\lib\qskinny;D:\prog\qskinny-master\build\install\lib\qskinny\plugins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\skins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\platforminputcontexts;D:\prog\qskinny-master\build\support\Debug;D:\prog\qt-creator-opensource-src-4.13.0orig\build\lib\qtcreator\plugins;D:\prog\qt-creator-opensource-src-4.13.0orig\build\bin;D:\prog\qt\5.15.2\msvc2019_64\qttools\plugins\designer
+D:\prog\qt-creator-opensource-src-4.13.0orig\build\bin\qtcreator.exe
+
+#qskinny 
+set PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;D:\prog\qskinny-master\build\install\lib\qskinny;D:\prog\qskinny-master\build\install\lib\qskinny\plugins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\skins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\platforminputcontexts;D:\prog\qskinny-master\build\support\Debug
+d:
+cd D:\prog\qskinny-master
+mkdir build
+cd build
+cmake .. -D CMAKE_INSTALL_PREFIX=.\install -D CMAKE_BUILD_TYPE=Debug
+cmake --build . --target install
+
+
+#build qtdesigner
+set PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin
+d:
+cd D:\prog\qt\5.15.2\msvc2019_64\qttools\src\designer\src\designer
+D:\prog\qt\Tools\QtCreator\bin\jom\jom.exe -f Makefile.Debug clean
+D:\prog\qt\Tools\QtCreator\bin\jom\jom.exe -f Makefile.Debug
+#run designer 
+set PATH=d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;d:\prog\cmake-3.17.0-win64-x64\bin;%PATH%;D:\prog\qt\5.15.2\msvc2019_64\bin;D:\prog\qskinny-master\build\install\lib\qskinny;D:\prog\qskinny-master\build\install\lib\qskinny\plugins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\skins;D:\prog\qskinny-master\build\install\lib\qskinny\plugins\platforminputcontexts;D:\prog\qskinny-master\build\support\Debug;D:\prog\qt-creator-opensource-src-4.13.0\build\lib\qtcreator\plugins;D:\prog\qt-creator-opensource-src-4.13.0\build\bin;D:\prog\qt\5.15.2\msvc2019_64\qttools\plugins\designer;D:\prog\qt\5.15.2\msvc2019_64\qtbase\bin
+D:\prog\qt\5.15.2\msvc2019_64\qttools\bin\designer.exe
+
+
+#build designer plugin
+cd D:\prog\qt\5.15.2\msvc2019_64\qttools\src\designer\src\plugins
+D:\prog\qt\Tools\QtCreator\bin\jom\jom.exe -f Makefile.Debug clean
+D:\prog\qt\Tools\QtCreator\bin\jom\jom.exe -f Makefile.Debug
+
+飞书
+3个logo一致
+
+ viewCode改成 代码编辑器
+
+插件管理-安装
+插件名字一致
+已安装插件窗口-- 卸载不在列表显示
+插件详情--来源--
+链接关系绑定
+
+军绿色qt图标的色
+
+最近打开列表
+
+查看模板
+
+
+D:\prog\qt\5.12.0\msvc2017_64\qtbase\bin\uic.exe 
+d:\prog\qt\5.12.0\msvc2017_64\qttools\uifiles\mainwindow.ui -o D:\prog\qt\5.12.0\msvc2017_64\qttools\untitled\main.cpp
+
+D:\prog\qt\5.12.0\msvc2017_64\qttools\untitled\debug\untitled.exe

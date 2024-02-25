@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/qt-project.org/designer">
+        <file>images/designer.png</file>
+        <file>images/folder.png</file>
+        <file>images/gear.png</file>
+        <file>images/information.png</file>
+        <file>images/new-document.png</file>
+        <file>images/play-button.png</file>
+        <file>designer.ico</file>
+    </qresource>
+</RCC>

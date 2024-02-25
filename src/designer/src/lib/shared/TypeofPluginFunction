@@ -1,0 +1,17 @@
+#ifndef TypeofPluginFunction_H
+#define TypeofPluginFunction_H
+#include<QString>
+#include<QStringList>
+
+namespace Core {
+namespace Internal {
+class TypeofPluginFunction
+{
+public:
+    QString name;
+    QString arg;
+    QString ret;
+};
+}
+}
+#endif
